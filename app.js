@@ -26,6 +26,7 @@ searchBtn.addEventListener("click", (event) => {
         })
         .catch((error) => {
             console.error(error);
+            document.querySelector("p").textContent = "Failed to fetch gif :(\nTry again";
         });
 
     searchField.value = "";
